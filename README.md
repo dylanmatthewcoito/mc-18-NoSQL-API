@@ -41,6 +41,8 @@ To run the Social Network API locally, follow these steps:
 
 The API server will start running at `http://localhost:3001/`.
 
+![Social Network API Routes](https://github.com/dylanmatthewcoito/mc-18-NoSQL-API/assets/71201051/da1449e7-90fd-4ac6-bd10-6b2c03758861)
+
 ## Usage
 Once the server is running, you can test the API routes using a tool like Insomnia or Postman. Here are the available routes:
 
