@@ -2,18 +2,70 @@
 
 ## Description
 
+The Social Network API is a backend application that provides a robust set of API endpoints for managing users, thoughts, and reactions in a social network setting. It is built using Express.js, MongoDB, and Mongoose, allowing for efficient data storage and retrieval.
 
+With this API, you can perform various operations such as creating users, adding friends to users' friend lists, creating and deleting thoughts, and adding and removing reactions to thoughts. The API follows RESTful principles and returns responses in JSON format.
 
 ## Installation
+To run the Social Network API locally, follow these steps:
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/social-network-api.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd social-network-api
+   ```
+
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+
+4. Set up the MongoDB database:
+   - Make sure you have MongoDB installed on your machine.
+   - Update the MongoDB connection URL in the `config/connection.js` file if necessary.
+
+5. Seed the database (optional):
+   - Run the following command to seed the database with sample data:
+     ```
+     node utils/seed.js
+     ```
+
+6. Start the server:
+   ```
+   npm start
+   ```
+
+The API server will start running at `http://localhost:3001/`.
 
 ## Usage
+Once the server is running, you can test the API routes using a tool like Insomnia or Postman. Here are the available routes:
 
-Provide instructions and examples for use. Include screenshots as needed.
+User Routes:
+- GET /api/users - Get all users
+- GET /api/users/:id - Get a single user by ID
+- POST /api/users - Create a new user
+- PUT /api/users/:id - Update a user by ID
+- DELETE /api/users/:id - Delete a user by ID
+- POST /api/users/:userId/friends/:friendId - Add a friend to a user's friend list
+- DELETE /api/users/:userId/friends/:friendId - Remove a friend from a user's friend list
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Thought Routes:
+- GET /api/thoughts - Get all thoughts
+- GET /api/thoughts/:thoughtId - Get a single thought by ID
+- POST /api/thoughts - Create a new thought
+- PUT /api/thoughts/:thoughtId - Update a thought by ID
+- DELETE /api/thoughts/:thoughtId - Delete a thought by ID
+- POST /api/thoughts/:thoughtId/reactions - Create a reaction for a thought
+- DELETE /api/thoughts/:thoughtId/reactions/:reactionId - Delete a reaction from a thought
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+Make sure to replace the route parameters (`:id`, `:thoughtId`, `:userId`, `:friendId`, `:reactionId`) with actual values when making requests.
+
+To create or update data, send a POST or PUT request with the necessary data in the request body. The API expects the data to be in JSON format.
+
+When a request is successful, the API will return the appropriate response with a success status code. If an error occurs, the API will return an error response with a descriptive error message.
+
+Feel free to explore and test the different routes to interact with the Social Network API!
