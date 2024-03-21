@@ -6,6 +6,10 @@ The Social Network API is a backend application that provides a robust set of AP
 
 With this API, you can perform various operations such as creating users, adding friends to users' friend lists, creating and deleting thoughts, and adding and removing reactions to thoughts. The API follows RESTful principles and returns responses in JSON format.
 
+## Walkthrough Video 
+
+https://drive.google.com/file/d/1ZQR6cVQ9h6Z1nnz9gMFqcwCE1Fy2j4G2/view
+
 ## Installation
 To run the Social Network API locally, follow these steps:
 
