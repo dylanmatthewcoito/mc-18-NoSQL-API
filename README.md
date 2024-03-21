@@ -75,3 +75,8 @@ To create or update data, send a POST or PUT request with the necessary data in 
 When a request is successful, the API will return the appropriate response with a success status code. If an error occurs, the API will return an error response with a descriptive error message.
 
 Feel free to explore and test the different routes to interact with the Social Network API!
+
+
+## Credits
+
+* This project uses code from the [chitty-chat] project, available at https://github.com/chriscodinghub/chitty-chat
