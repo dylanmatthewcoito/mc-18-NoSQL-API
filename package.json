@@ -1,19 +1,22 @@
 {
-    "name": "mc-18",
-    "version": "1.0.1",
-    "description": "NoSQL/MongoDB Project",
-    "main": "index.js",
-    "license": "MIT",
-    "scripts": {
-      "start": "node index",
-      "dev": "nodemon index",
-      "seed": "node utils/seed"
-    },
-    "dependencies": {
-      "express": "^4.17.1",
-      "mongoose": "^7.0.2"
-    },
-    "devDependencies": {
-      "nodemon": "^2.0.9"
-    }
-  }
+  "name": "mc-18",
+  "version": "1.0.1",
+  "description": "NoSQL/MongoDB Project",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "seed": "node utils/seed"
+  },
+  "dependencies": {
+    "express": "^4.19.1",
+    "moment": "^2.30.1",
+    "mongoose": "^7.6.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  },
+  "keywords": [],
+  "author": ""
+}
